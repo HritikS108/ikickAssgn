@@ -1,0 +1,21 @@
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin:5px;
+    padding:5px;
+  }
+  
+  .story img {
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; 
+    object-fit: cover;
+    border: 2px solid rgb(0, 128, 254); 
+  }
+  
+  .story-label {
+    margin-top: 5px; 
+    text-align: center;
+    font-size: 12px;
+  }

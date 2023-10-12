@@ -1,0 +1,5 @@
+<div class="new-feeds">
+  <div class="new-feeds-content">
+    <app-post-card *ngFor="let post of feeds" [userImg]="post.userImg" [username]="post.username" [postImage]="post.postImageUrl" [caption]="post.caption" [likes]="post.likes"></app-post-card>
+  </div>
+</div>

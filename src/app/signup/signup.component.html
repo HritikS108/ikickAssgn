@@ -1,0 +1,47 @@
+<div class="signup">
+
+    <div class="logo-container">
+        <div style = "margin:25%">
+            <h1>LOGO</h1>
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form (ngSubmit)="onSubmit()" class="signupform">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" [(ngModel)]="user.username" pattern="[a-z_]{1,20}" required>
+            <!-- <p>Username should contain lowercase letters and underscores, max 20 characters.</p> -->
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"  required>
+            <!-- <p>Password should have at least one uppercase letter, one lowercase letter, one special character, minimum 8 characters, and max 30 characters.</p> -->
+          </div>
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"  required>
+          </div>
+          <div class="form-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"  pattern="[A-Za-z ]{1,50}" required>
+            <!-- <p>Full Name should contain only letters, max 50 characters.</p> -->
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"  pattern="[0-9]{10,15}">
+            <!-- <p>Enter a valid phone number (between 10 to 15 digits).</p> -->
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" >
+            <!-- <p>Enter a valid email address.</p> -->
+          </div>
+          <button type="submit" class="btn btn-dark">REGISTER</button>
+        </form>
+        
+    </div>
+</div>
+
+

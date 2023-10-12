@@ -1,0 +1,37 @@
+.homepage {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  app-side-panel {
+    margin:20px ;
+    flex: 1;
+    width:35%;
+    padding: 20px;
+    background-color: rgb(0, 0,0,0.05);
+    color: white;
+    height:100vh;
+  }
+  
+  .right-half {
+    flex: 2;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  app-stories {
+    background-color: white;
+    padding: 20px;
+    height:15vh;
+    margin-bottom:15px;
+  }
+  
+  app-new-feeds {
+    flex: 1;
+    height:65vh;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.05);
+    margin:20px;
+  }
+  

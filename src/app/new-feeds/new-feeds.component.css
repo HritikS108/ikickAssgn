@@ -1,0 +1,19 @@
+
+.new-feeds {
+    overflow: hidden;
+    position: relative;
+    max-height: 700px;
+    overflow-y: auto;
+  }
+
+.new-feeds-content{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.new-feeds::-webkit-scrollbar {
+    width: 0;
+  } 
+
